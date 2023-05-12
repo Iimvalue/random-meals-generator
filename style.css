@@ -1,0 +1,20 @@
+body{
+    background-image: url("img/meal.jpg");
+    background-size: 100%;
+    /*background-repeat: no-repeat;*/
+}
+
+.jumbotron{
+    position: relative;
+    background:transparent !important;
+
+}
+
+.meal .card{
+    min-height: 380px;
+    min-width: 100px;
+    max-width: 300px;
+}
+.card-img-top{
+    height: 200px;
+}
