@@ -12,10 +12,7 @@
     <title>Random Meals Generator</title>
 </head>
 
-
 <body>
-
-
 
 <div class="jumbotron">
     <div class="container">
@@ -29,12 +26,37 @@
                 <h1 class="display-5 text-center text-success">Get your random meal!</h1>
             </div>
 
-            <div class="col-10 col-md-3">
-                <p class="lead text-center text-success">Press the Get Meal button to get your perfect meal!</p>
+            <div class="col-12">
+                <p class="lead text-center text-success">Press the Get a Meal button to get <br>your perfect meal!</p>
             </div>
+
+            <fieldset class="form-group">
+                <h3 class="text-success text-center">Food Type</h3>
+                <div class="form-check offset-2">
+                    <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios1"
+                           value="chicken" checked="">
+                    <label class="form-check-label" for="optionsRadios1">
+                        Chicken
+                    </label>
+                </div>
+                <div class="form-check offset-2">
+                    <input class="form-check-input " type="radio" name="optionsRadios" id="optionsRadios2" value="beef">
+                    <label class="form-check-label" for="optionsRadios2">
+                        Beef
+                    </label>
+                </div>
+                <div class="form-check offset-2">
+                    <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios3"
+                           value="seafood">
+                    <label class="form-check-label" for="optionsRadios3">
+                        SeaFood
+                    </label>
+                </div>
+            </fieldset>
+
             <div class="col-12">
                 <p class="lead text-center">
-                    <a class="btn btn-success btn-lg" href="#" role="button">Get meal</a>
+                    <a id='get-meal' class="btn btn-success btn-lg" href="#" role="button">Get a Meal</a>
                 </p>
             </div>
         </div>
@@ -42,36 +64,20 @@
     </div>
 </div>
 
-<div class="meal">
+<div id="meal">
 
     <div class="container">
         <div class="row justify-content-center">
 
-            <div class="col col-md-4 pt-3 card-2">
-                <div class="card">
-                    <img src="img/vintage-old-rustic-cutlery-dark.jpg" class="card-img-top img-responsive" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
+            <div class="card-1 col col-md-4 pt-3"></div>
 
-
-            <div class="col col-md-4 pt-3 card-2">
-                <div class="card">
-                    <img src="img/meal.jpg" class="card-img-top img-responsive" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
+            <div class="card-2 col col-md-4 pt-3"></div>
 
         </div>
 
     </div>
 </div>
+
 
 </body>
 
@@ -81,6 +87,3 @@
 <script src="app.js"></script>
 
 </html>
-
-<!--Designed the website using Bootstrap-->
-<!--Space between cards in medium page-->

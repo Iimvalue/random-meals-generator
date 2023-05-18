@@ -10,11 +10,27 @@ body{
 
 }
 
-.meal .card{
-    min-height: 380px;
+#meal .card{
+    height: 360px;
     min-width: 100px;
     max-width: 300px;
 }
+
+fieldset input[type=radio]{
+    accent-color:#28a645;
+}
+
+input:checked~.form-check-label {
+    color: #28a645;
+}
+
+input~.form-check-label {
+    color: #cbccce;
+}
 .card-img-top{
     height: 200px;
+}
+
+.card-body .card-title{
+    height: 0px;
 }
